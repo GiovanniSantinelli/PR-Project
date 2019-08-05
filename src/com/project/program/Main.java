@@ -13,7 +13,7 @@ import org.rosuda.JRI.Rengine;
 public class Main {
 
 public static final String pkgName = "provaPkg";
-public static final String pkgPath = "C:/Users/giova/Documents/provaPkg";
+public static final String pkgPath = "~/R/win-library/3.6/provaPkg";
 public static final String midiPath = "C:/Users/giova/Documents/try/sothis.mid";
 
 	public static String readInput() throws Exception {
