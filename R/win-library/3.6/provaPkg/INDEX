@@ -1,0 +1,2 @@
+getNotesByPath          This function need a local .mid file path, and
+                        return some informations.

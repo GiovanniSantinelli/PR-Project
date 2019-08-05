@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: This function need a local .mid file path, and return some...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for getNotesByPath {provaPkg}"><tr><td>getNotesByPath {provaPkg}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+This function need a local .mid file path, and return some informations.
+</h2>
+
+<h3>Usage</h3>
+
+<pre>
+getNotesByPath(path, number)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>path</code></td>
+<td>
+
+
+</td></tr>
+<tr valign="top"><td><code>number</code></td>
+<td>
+
+
+</td></tr>
+</table>
+
+
+<h3>Examples</h3>
+
+<pre>
+##---- Should be DIRECTLY executable !! ----
+##-- ==&gt;  Define data, use random,
+##--	or do  help(data=index)  for the standard data sets.
+
+## The function is currently defined as
+function (path, number)
+{
+    library("tuneR")
+    content &lt;- readMidi(path)
+    content &lt;- getMidiNotes(content)
+    df &lt;- head(content, number)
+    notes &lt;- df[5]
+    time &lt;- df[1]
+    df1 &lt;- data.frame(time, notes)
+    df1
+  }
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>provaPkg</em> version 0.1.0 <a href="00Index.html">Index</a>]</div>
+</body></html>
