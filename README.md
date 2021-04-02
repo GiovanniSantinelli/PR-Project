@@ -1,2 +1,3 @@
 # PR-Project
-Our Pattern Recognition repository
+Pattern Recognition, a Java/R GUI application to analyze sequences.
+Executables available in Release section
